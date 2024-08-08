@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.main-wrapper {
+  /* background-color: red; */
+  background-color: white;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+header {
+  background-color: white;
+  text-align: right;
+  padding: 10px 30px;
+}
+header nav a{
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.hamburger-button{
+  height: 200px;
+  display: none;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+}
+.recent-post {
+  padding: 150px 150px 50px;
+  display: flex;
+  flex-direction: column;
+}
+.featured-work {
+  padding: 50px;
+  /* background-color: chartreuse; */
+}
+.featured-work {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.work {
+  /* background-color: aqua; */
+  border-bottom: 1px solid gray;
+  gap: 20px;
+  padding: 20px;
+  display: flex;
+}
+.featured-work .work img {
+  border-radius: 10px;
+  border: 0px;
+}
+.work .detail {
+  width: 100%;
+  /* background-color: #ff6464; */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.img-card img{
+  width: 246px;
+}
+.year-worktype {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.year {
+  background-color: #142850;
+  height: 25px;
+  border-radius: 12.5px;
+  padding-inline: 0.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+footer{
+    height: 100px;
+    /* background-color: #ff6464; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  footer p{
+    font-size: 14px;
+  }
+  .highlight{
+    color: #ff6464;
+  }
+  .social-media{
+    height: 30px;
+  }
+  .social-media img{
+    height: 100%;
+  }
+
+  @media(max-width:1242px){
+    .img-card{
+      width: 100%;
+      min-height: 200px;
+      max-height: 400px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .img-card img{
+      width: 100%;
+    }
+    .work{
+      display: flex;
+      flex-direction: column;
+    }
+    .content{
+      padding: 30px;
+    }
+    header nav{
+      display: none;
+    }
+    .hamburger-button{
+      display: inline-block;
+      height: 25px;
+    }
+  }
